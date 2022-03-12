@@ -1,6 +1,5 @@
 body {
-	font-family: Sans-serif;
-  font-size: 16px;
+  font-family: Sans-serif;
 }
 
 header {
@@ -17,7 +16,7 @@ header {
 nav {
   position: absolute;
   top: 110px;
-  right: 0;
+  right: 0px;
 }
 
 nav li {
@@ -25,7 +24,7 @@ nav li {
   margin: 0 0 0 15px;
 }
 
-nav a {
+nav a { 
   text-transform: uppercase;
   color: black;
   font-weight: bold;
@@ -39,60 +38,55 @@ nav a:hover {
   text-decoration: underline;
 }
 
-#banner {
-	width: 100%;
+.produtos {
+  width: 940px;
+  position: relative;
+  margin: auto;
+  padding: 50px 0;
 }
 
-.principal {
- 	background: #cccccc;
-	padding: 40px;
+.produtos li {
+  display: inline-block;
+  text-align: center;
+  width: 30%;
+  vertical-align: top;
+  margin: 0 1.5%;
+  padding: 30px 20px;
+  box-sizing: border-box;
+  border: 2px solid black;
+  border-radius: 10px;
+  transition: 500ms;
 }
 
-.titulo-centralizado {
-	text-align: center;
-  font-size: 18px;
-  font-weight: 600;
-  padding: 15px 0;
+.produtos li:hover {
+  color: #a17213;
+  border-color: #a17213;
+  cursor: pointer;
 }
 
-strong {
+.produtos li:active {
+  border-color: #9c6614;
+  color: #9c6614;
+}
+
+.produtos li:hover h2 {
+  font-size: 32px;
+}
+
+.produtos h2 {
+  font-size: 25px;
   font-weight: bold;
+  transition: 100ms;
 }
 
-p {
-	text-align: center;
+.produto-descricao {
+  font-size: 18px;
 }
 
-#missao {
-	font-size:26px;
-  font-weight: 400;
-  font-style: italic;
-  padding: 15px 0;
-}
-
-em strong {
-	color: #DD0000;
-}
-
-.itens {
-	font-style: italic;
-}
-
-.beneficios ul {
-	display: inline-block;
-	vertical-align: top;
-	width: 20%;
-	margin-right: 15%;
-	font-size: 18px;
-}
-
-.beneficios {
-	background: white;
-	padding: 50px;
-}
-
-.imagem-beneficios {
-	width: 50%;
+.produto-preco {
+  font-size: 22px;
+  font-weight: bold;
+  margin-top: 15px;
 }
 
 footer {
@@ -103,7 +97,33 @@ footer {
 
 .copyright {
   color: white;
-  margin-top: 20px;
   font-size: 12px;
+  margin-top: 20px;
+}
+
+main {
+  width: 940px;
+  margin: 0 auto;
+}
+
+form {
+  margin: 40px 0;
+}
+
+form label, form p {
+  display: block;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.input-padrao {
+  display: block;
+  margin-bottom: 20px;
+  padding: 12px 25px;
+  width: 50%;
+}
+
+.checkbox {
+  margin: 20px 0;
 }
 
