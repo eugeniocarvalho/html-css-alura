@@ -10,7 +10,7 @@ header {
 
 .caixa {
     position: relative;
-    width: 940px;
+    width: 80%;
     margin: 0 auto;
 }
 
@@ -50,6 +50,7 @@ nav a:hover {
     display: inline-block;
     text-align: center;
     width: 30%;
+    height: 416px;
     vertical-align: top;
     margin: 0 1.5%;
     padding: 30px 20px;
@@ -71,7 +72,7 @@ nav a:hover {
 }
 
 .produtos li:hover h2 {
-    font-size: 32px;
+    font-size: 28px;
 }
 
 .produtos h2 {
@@ -151,7 +152,7 @@ form legend {
 
 table {
     margin: 40px 30px;
-    margin-left: 14%;
+    margin-left: 11%;
 }
 
 thead {
@@ -268,9 +269,41 @@ th {
     margin: 2em auto;
 }
 
-@media screen and (max-width: 480px) {
-    .caixa, .principal, .conteudo-beneficios, .mapa-conteudo, .video {
+@media screen and (max-width: 940px) {
+    .caixa, .principal, .conteudo-beneficios, .form-main {
+        width: 90%;
+    }
+
+    .mapa-conteudo {
         width: auto;
+    }
+
+    .produtos {
+        width: auto;
+        text-align: center;
+    }
+
+    .produtos li {
+        width: 45%;
+        margin: 20px auto;
+        height: 416px;
+    }
+
+    table {
+        margin-left: 8%;
+    }
+}
+
+
+
+@media screen and (max-width: 700px) {
+    .caixa, .principal, .conteudo-beneficios, .mapa-conteudo, .video, .form-main {
+        width: auto;
+    }
+
+    p {
+        width: 90%;
+        margin: auto;
     }
 
     h1 {
@@ -279,9 +312,112 @@ th {
 
     nav {
         position: static;
+        text-align: center;
+    }
+
+    .caixa a {
+        font-size: 16px;
+    }
+
+    .utensilios {
+        padding-left: 5%;
+    }
+
+    .conteudo-beneficios {
+        width: 90%;
+    }
+
+    .lista-beneficios {
+        width: 40%;
+    }
+
+    .imagem-beneficios {
+        width: 60%;
+    }
+
+    .itens {
+        padding-left: 5%;
+    }
+
+    .produtos li {
+        width: 90%;
+        display: block;
+        text-align: center;
+        margin: 10px auto;
+    }
+
+    form {
+        width: 90%;
+        margin: 20px auto;
+    }
+
+    .input-padrao {
+        display: inline;
+    }
+
+    table {
+        margin: 20px 8%;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .caixa, .principal, .conteudo-beneficios, .mapa-conteudo, .video, .produtos, .form-main {
+        width: auto;
+    }
+
+    p {
+        width: 90%;
+        margin: auto;
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    nav {
+        position: static;
+        text-align: center;
+    }
+
+    .caixa a {
+        font-size: 16px;
+    }
+
+    .utensilios {
+        padding-left: 5%;
     }
 
     .lista-beneficios, .imagem-beneficios {
         width: 100%;
     }
+
+    .itens {
+        padding-left: 5%;
+    }
+
+    .produtos li {
+        width: 90%;
+        display: block;
+        text-align: center;
+        margin: 10px auto;
+    }
+
+    form {
+        width: 90%;
+        margin: 20px auto;
+    }
+
+    .input-padrao {
+        display: inline;
+    }
+
+    .enviar {
+        width: 90%;
+        margin: 10px 20px;
+    }
+
+    table {
+        margin-left: 8%;
+    }
 }
+
